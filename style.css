@@ -8,9 +8,11 @@
   font-optical-sizing: auto;
 }
 header{
-    background-color: blanchedalmond;
+
     padding-top: 50px;
-    /* width: 90%; */
+    background: url(./images/developer.png), url(./images/header_bg.png),rgb(245, 231, 211);
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
 }
 nav{
     width: 70%; /* nav is gonna take 70% width of the screen or its parent header's(if its under a parent, which it is here) */
@@ -34,7 +36,7 @@ nav{
  display: flex; /*ul.right-nav has three lists and they are block level so they dont exist side by side, display=flex is gonna make them*/
  list-style-type: none;/*gonna remove the dots from lists*/
  gap: 50px;/*those three lists exist totally side-by-side but now they are gonna have 50px of gaps among them*/
- align-items: center;.right-nav has three children(three lists) now they are gonna be at center(y-axis) 
+ align-items: center;/*.right-nav has three children(three lists) now they are gonna be at center(y-axis) */
 }
 .right-nav a{
     font-size: 20px;
@@ -48,4 +50,48 @@ nav{
     font-size: 20px;
     font-weight: bold;
     color: white;
+}
+.btn:hover{
+    cursor:pointer;
+}
+/* -------END OF HEADER-NAV------------------- */
+
+/*-----start of header-banner-section-------*/
+
+#banner{
+    border: 2px solid royalblue ;
+    margin: 47px 38px 0px 205px;/*the #banner section is gonna take 47px space from top, 38px from right, 0px from bottom and 205px from left*/
+    display: flex;/*#banner-section has two children (div.banner-content and div.banner-image) so display=flex gonna make them in one line instead of up-bottom.*/
+    justify-content: space-between;/*its gonna make them apart*/
+    align-items: center;/*the two children are gonna be at center (toward y-axis )*/
+}
+#banner .banner-content{
+        width: 585px;
+        border: 2px solid #FD6E0A;
+}
+#banner .banner-content h2{
+    font-size: 45px;
+    font-weight: 600;/*semibold*/
+    color: #474747;
+
+}
+#banner .banner-content h1{
+    font-size: 85px;
+    font-weight: bold;
+    color: #181818;
+    margin-bottom: 20px;
+}
+#banner .banner-content p{
+    font-size: 18px;
+    color: #757575;
+    line-height: 30px;/*the gap between two lines*/
+    margin-bottom: 30px;
+}
+#banner .banner-image{
+    border: 2px solid #8407d6;
+
+}
+#banner .banner-image img{
+        max-width: 585px;
+        vertical-align: middle;/*every image gets a bottom-gap , its gonna remove that*/
 }
