@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.font-open-sans {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+header{
+    background-color: blanchedalmond;
+    padding-top: 50px;
+    /* width: 90%; */
+}
+nav{
+    width: 70%; /* nav is gonna take 70% width of the screen or its parent header's(if its under a parent, which it is here) */
+    border: 2px solid red;
+    margin: 0 auto; /* nav is gonna take 0 margin from top-bottom and auto margin from left-right.*/
+    /*margin: auto tells the browser: "Hey, I want to take up as much available space as possible in this direction and center myself if possible."
+    */
+    display: flex; /*nav has two block level elements.(div.class and ul.right-nav)and them being block level, they are not in the same line. but if you want them to stay in the same line. use display=flex in their parent tag. now they r gonna exist side by side*/
+    justify-content: space-between;/*it will move them from side-by -ide to as distant as possible.(still they would exist in the same line)*/
+    /* align-items: center;the two children of nav (div.left-nav and ul.right-nav) are gonna be at center(y-axis) */
+}
+
+.left-nav h2{
+    font-size: 45px;
+    font-weight: 900;
+}
+.r-color{
+    color: #FD6E0A;
+}
+.right-nav{
+ display: flex; /*ul.right-nav has three lists and they are block level so they dont exist side by side, display=flex is gonna make them*/
+ list-style-type: none;/*gonna remove the dots from lists*/
+ gap: 50px;/*those three lists exist totally side-by-side but now they are gonna have 50px of gaps among them*/
+ align-items: center;.right-nav has three children(three lists) now they are gonna be at center(y-axis) 
+}
+.right-nav a{
+    font-size: 20px;
+    color: #474747;
+    text-decoration: none;/*removes the underline*/
+}
+.btn{
+    background-color: #FD6E0A;
+    border: none;/*removes the border*/
+    padding: 18px 35px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
